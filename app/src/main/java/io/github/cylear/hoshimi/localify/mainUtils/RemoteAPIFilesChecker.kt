@@ -57,7 +57,7 @@ object RemoteAPIFilesChecker {
 
                             val responseBody = response.body?.string()
                             if (responseBody != null) {
-                                val json = Json { ignoreUnknownKeys = true }
+                                val json = Json { ignoreUnknownKeys = true; coerceInputValues = true }
                                 val releaseData = json.decodeFromString<GithubReleaseModel>(responseBody)
 
                                 // Check update
@@ -103,7 +103,7 @@ object RemoteAPIFilesChecker {
 
                             val responseBody = response.body?.string()
                             if (responseBody != null) {
-                                val json = Json { ignoreUnknownKeys = true }
+                                val json = Json { ignoreUnknownKeys = true; coerceInputValues = true }
                                 val releaseData = json.decodeFromString<GithubReleaseModel>(responseBody)
 
                                 // Check and save update

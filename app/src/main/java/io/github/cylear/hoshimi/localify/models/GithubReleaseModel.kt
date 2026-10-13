@@ -49,7 +49,7 @@ data class GithubReleaseModel(
     val assets: List<Asset>,
 //    val assets_url: String,
 //    val author: User,
-    val body: String,
+    val body: String? = null,
 //    val created_at: String,
 //    val draft: Boolean,
 //    val html_url: String,
