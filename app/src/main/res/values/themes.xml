@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.HoshimiLocalify" parent="@style/Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="android:windowBackground">@drawable/splash_style</item>
+    </style>
+
+    <style name="Theme.HoshimiLocalify.NoDisplay" parent="@style/Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="android:windowFrame">@null</item>
+        <!-- Set whether swipeable -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- Set whether translucent -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- No title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- Background -->
+        <item name="android:background">@null</item>
+        <!-- Window background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Enable background dim -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- Close on touch outside -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!-- No title for specific devices -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+</resources>

@@ -1,0 +1,69 @@
+#pragma once
+
+namespace HoshimiLocal::Config {
+    extern bool isConfigInit;
+
+    extern bool dbgMode;
+    extern bool enabled;
+    extern bool lazyInit;
+    extern bool replaceFont;
+    extern bool useRuntimeKoreanFont;
+    extern bool replaceImages;
+    extern bool usePhoneSubtitles;
+    extern std::string displayUserName;
+    extern bool forceExportResource;
+    extern int gameOrientation;
+    extern bool textTest;
+    extern bool useMasterTrans;
+    extern bool dumpText;
+    extern bool debugImageResourceLog;
+    extern bool forceImagePreserveAspect;
+    extern bool debugMasterDbLog;
+    extern bool debugAudioLog;
+    extern bool enableFreeCamera;
+    extern int targetFrameRate;
+    extern bool unlockAllLive;
+    extern bool skipLiveToResult;
+    extern bool unlockAllLiveCostume;
+    extern bool unlockAllPhotoPose;
+
+    extern bool enableLiveCustomeDress;
+    extern std::string liveCustomeHeadId;
+    extern std::string liveCustomeCostumeId;
+
+    extern bool loginAsIOS;
+
+    extern bool useCustomeGraphicSettings;
+    extern float renderScale;
+    extern int qualitySettingsLevel;
+    extern int volumeIndex;
+    extern int maxBufferPixel;
+
+    extern int reflectionQualityLevel;
+    extern int lodQualityLevel;
+
+    extern bool enableBreastParam;
+    extern float bDamping;
+    extern float bStiffness;
+    extern float bSpring;
+    extern float bPendulum;
+    extern float bPendulumRange;
+    extern float bAverage;
+    extern float bRootWeight;
+    extern bool bUseArmCorrection;
+    extern bool bUseScale;
+    extern float bScale;
+    extern bool bUseLimit;
+    extern float bLimitXx;
+    extern float bLimitXy;
+    extern float bLimitYx;
+    extern float bLimitYy;
+    extern float bLimitZx;
+    extern float bLimitZy;
+
+    extern bool dmmUnlockSize;
+
+    std::string ReplaceDisplayUserName(std::string text);
+    void LoadConfig(const std::string& configStr);
+    void SaveConfig(const std::string& configPath);
+}

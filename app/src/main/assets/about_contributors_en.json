@@ -1,0 +1,20 @@
+{
+    "plugin_repo": "https://github.com/cylear/idolypride-addon",
+    "main_contributors": [
+        {
+            "name": "Cyle (Import to Idolypride)",
+            "links": [
+                {"name": "Github", "link": "https://github.com/cylear"}
+            ]
+        },
+        {
+            "name": "chinosk (Plugin code)",
+            "links": [
+                {"name": "Github", "link": "https://github.com/chinosk6"}
+            ]
+        }
+    ],
+    "contrib_img": {
+        "plugin": "https://contrib.rocks/image?repo=cylear/idolypride-addon"
+    }
+}
